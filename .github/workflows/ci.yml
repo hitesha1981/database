@@ -20,4 +20,3 @@ jobs:
       dockerfile_path: ./Dockerfile
     secrets:
       GHCR_TOKEN: ${{ secrets.GHCR_TOKEN }}
-
