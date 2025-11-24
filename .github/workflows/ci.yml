@@ -3,12 +3,12 @@ name: CI Build Docker Image
 
 on:
   push:
-    branches:
-      - '**'
+    # branches:
+    #   - '**'
     tags:
       # Add explicit tag patterns here if you use them in the metadata action
       - 'v*.*.*'
-         
+
 jobs:
   call-build-and-push:
     permissions:
