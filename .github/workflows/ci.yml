@@ -10,6 +10,9 @@ on:
 
 jobs:
   call-build-and-push:
+    permissions:
+      contents: read
+      packages: write  
     uses: hitesha1981/ci-templates/.github/workflows/dockerfiles.yml@main
     with:
       image_name: ${{ github.event.repository.name }} # Uses the name of the current repo 
